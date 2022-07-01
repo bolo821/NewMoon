@@ -1,0 +1,217 @@
+@import '/src/styles/common.scss';
+@import '/src/styles/theme.scss';
+
+.creator-page-rt {
+    .top-section {
+        padding: 30px 0;
+        background-color: $gray1;
+        .profile {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            position: relative;
+            @media screen and (max-width: 768px) {
+                flex-direction: column;
+            }
+            .user {
+                display: flex;
+                align-items: center;
+                @media screen and (max-width: 768px) {
+                    flex-direction: column;
+                    align-items: baseline;
+                }   
+                .avatar {
+                    width: 90px;
+                    height: 90px;
+                    border-radius: 5px;
+                    background-color: $gray0;
+                    margin-right: 20px;
+                    @media screen and (max-width: 768px) {
+                        margin-bottom: 20px;
+                    }
+                }
+                .other {
+                    @media screen and (max-width: 768px) {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    .name {
+                        font-size: 22px;
+                        margin-bottom: 10px;
+                        svg {
+                            margin-left: 10px;
+                        }
+                        @media screen and (max-width: 768px) {
+                            margin-bottom: 10px;
+                        }
+                    }
+                    .wallet {
+                        margin: 0;
+                        div:first-child {
+                            margin-right: 30px;
+                            font-size: 16px;
+                            @media screen and (max-width: 768px) {
+                                margin-bottom: 10px;
+                            }
+                            span {
+                                color: rgba(0, 0, 0, 0.4);
+                                margin-right: 10px;
+                            }
+                        }
+                        div:last-child {
+                            color:rgba(0, 0, 0, 0.6);
+                            font-size: 14px;
+                            @media screen and (max-width: 768px) {
+                                margin-bottom: 20px;
+                            }
+                            span {
+                                margin-right: 10px;
+                            }
+                            span:last-child {
+                                color: $blue0;
+                            }
+                        }
+                    }
+                }
+            }
+            .share {
+                display: flex;
+                align-items: center;
+                & > svg {
+                    margin-right: 20px;
+                }
+                .share-bn {
+                    padding: 10px 12px;
+                    border: 1px solid rgba(0, 0, 0, 0.2);
+                    border-radius: 5px;
+                    display: flex;
+                    align-items: center;
+                    font-size: 14px;
+                    svg {
+                        margin-right: 10px;
+                    }
+                }
+            }
+            .trade-earn {
+                position: absolute;
+                right: 0;
+                top: 75px;
+                background: linear-gradient(to right, #FF0000, #FFE600 33%, #00FF0A 67%, #000AFF);
+                padding: 2px;
+                border-radius: 5px;
+                @media screen and(max-width: 768px) {
+                    top: 40px;
+                }
+                .inner {
+                    padding: 10px 15px;
+                    font-size: 14px;
+                    background: white;
+                    border-radius: 5px;
+                }
+            }
+        }
+        .nft-info {
+            display: flex;
+            width: fit-content;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            background-color: white;
+            font-size: 14px;
+            overflow-x: auto;
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
+            div {
+                padding: 12px 20px;
+                white-space: nowrap;
+            }
+            span {
+                margin-right: 15px;
+            }
+            svg {
+                margin-right: 5px;
+            }
+            span:first-child {
+                color:rgba(0, 0, 0, 0.6);       
+            }
+            div:not(:last-child) {
+                border-right: 1px solid rgba(0, 0, 0, 0.2);
+            }
+            .change {
+                color: $red0;
+            }
+            .amount {
+                font-weight: 700;
+            }
+        }
+    }
+    .tab {
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            font-size: 14px;
+            li {
+                padding: 15px;
+                cursor: pointer;
+            }
+            li.active {
+                border-bottom: 1px solid $blue0;
+            }
+        }
+    }
+    .body {
+        margin-bottom: 50px;
+        .filter {
+            display: flex;
+            flex-direction: row-reverse;
+            padding: 30px 0;
+            @media screen and (max-width: 768px) {
+                flex-direction: column;   
+            }
+            input, select {
+                @media screen and (max-width: 768px) {
+                    width: 100%;       
+                }
+                background-color: $gray4;
+                border: none;
+                padding: 15px;
+                font-size: 14px;
+                width: 300px;
+                border-radius: 5px;
+            }
+            select {
+                appearance: none;
+                background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+                background-repeat: no-repeat;
+                background-position: right 20px center;
+                background-size: 1em;
+            }
+            .search {
+                position: relative;
+                margin-right: 30px;
+                @media screen and (max-width: 768px) {
+                    width: 100%;
+                    margin-top: 15px;
+                }
+                span {
+                    position: absolute;
+                    top: 10px;
+                    left: 15px;
+                }
+                input {
+                    padding-left: 50px;
+                }
+            }
+        }
+        .row {
+            margin: -7.5px;
+            & > div {
+                padding: 7.5px;
+            }
+        }
+    }
+}

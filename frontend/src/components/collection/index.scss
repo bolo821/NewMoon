@@ -1,0 +1,116 @@
+@import '/src/styles/common.scss';
+@import '/src/styles/theme.scss';
+
+.collection-table-rt {
+    font-size: 16px;
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+    td:first-child {
+        div {
+            display: flex;
+            align-items: center;
+            .no {
+                margin-right: 30px;
+            }
+            .image {
+                width: 40px;
+                height: 40px;
+                border-radius: 5px;
+                background: $gray2;
+                margin-right: 10px;
+            }
+            .collection {
+                margin-right: 5px;
+            }
+        }
+    }
+    td:nth-child(2), td:nth-child(3) {
+        div {
+            display: flex;
+            flex-direction: column;
+            p {
+                display: flex;
+                align-items: center;
+                margin-bottom: 5px;
+                .price {
+                    margin-left: 5px;
+                }
+            }
+            .change {
+                font-size: 14px;
+                color: $green0;
+            }
+        }
+    }
+    td:nth-child(4) {
+        div {
+            display: flex;
+            align-items: center;
+            span {
+                margin-left: 5px;
+            }
+        }
+    }
+}
+.collection-list-rt {
+    display: none;
+    @media screen and (max-width: 768px) {
+        display: block;
+    }
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+            padding: 20px 20px 20px 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            .main-info {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 16px;
+                .left {
+                    display: flex;
+                    align-items: center;
+                    .no {
+                        margin-right: 30px;
+                    }
+                    .image {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 5px;
+                        background-color: $gray2;
+                        margin-right: 10px;
+                    }
+                    .collection {
+                        margin-right: 5px;
+                    }
+                }
+                .right {
+                    path {
+                        stroke: black;
+                    }
+                }
+            }
+            .other-info {
+                margin: 0 0 0 90px;
+                .row {
+                    margin: -5px;
+                    & > div {
+                        padding: 5px;
+                        span {
+                            margin-left: 5px;
+                        }
+                    }
+                    .col-4 {
+                        color: $green0;
+                    }
+                    .col-3 {
+                        color:rgba(0, 0, 0, 0.4);
+                    }
+                }
+            }
+        }
+    }
+}

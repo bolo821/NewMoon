@@ -1,0 +1,109 @@
+@import '/src/styles/variables';
+
+.search-box-rt {
+    position: relative;
+    input {
+        border: none;
+        outline: none;
+        border-radius: 100px;
+        width: 400px;
+        padding: 12px 10px 12px 50px;
+        color: $lightfg1;
+        font-size: 14px;
+    }
+    span {
+        position: absolute;
+        top: 7px;
+        left: 21px;
+        @media screen and (max-width: 1250px) {
+            top: 10px;
+        }
+    }
+}
+.language-select-rt {
+    display: flex;
+    align-items: center;
+    span:first-child {
+        margin-right: 8px;
+    }
+}
+.mobile-header-bn-rt {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: $gray2;
+    border-radius: 50%;
+}
+.connect-wallet-modal-rt {
+    .modal-dialog {
+        max-width: 440px;
+        @media screen and (max-width: 768px) {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .modal-content {
+            border-radius: 0;
+            .header {
+                padding: 20px 30px;
+                background-color: rgba(0, 0, 0, 0.2);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                h3 {
+                    font-size: 18px;
+                    font-weight: 600;
+                    margin: 0;
+                }
+            }
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                li {
+                    padding: 20px 30px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+                    font-weight: 600;
+                    font-size: 18px;
+                    cursor: pointer;
+                    div {
+                        position: relative;
+                        padding-left: 40px;
+                        svg {
+                            position: absolute;
+                            left: 0;
+                        }
+                    }
+                }
+            }
+            .footer {
+                background: rgba(0, 0, 0, 0.2);
+                padding: 30px 30px 40px;
+                p {
+                    text-align: center;
+                    color: rgba(0, 0, 0, 0.4);
+                    font-size: 16px;
+                }
+                p:first-child {
+                    margin-bottom: 15px;
+                }
+                p:nth-child(2) {
+                    margin-bottom: 30px;
+                }
+                p:nth-child(3) {
+                    margin-bottom: 10px;
+                }
+                p:last-child {
+                    color: black;
+                    text-decoration: underline;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}

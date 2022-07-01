@@ -1,0 +1,33 @@
+@import '/src/styles/theme.scss';
+
+.menu-page-rt {
+    background-color: $darkbg1;
+    padding-top: 30px;
+    min-height: calc(100vh - 100px);
+    .search {
+        margin-bottom: 15px;
+        .search-box-rt {
+            input {
+                width: 100%;
+            }
+        }
+    }
+    .manage {
+        margin-bottom: 60px;
+    }
+    ul {
+        list-style: none;
+        margin: 0 0 100px;
+        padding: 0;
+        a {
+            color: white;
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+    }
+    .connect {
+        .button-rt {
+            width: 100%;
+        }
+    }
+}

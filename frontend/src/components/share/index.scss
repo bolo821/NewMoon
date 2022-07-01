@@ -1,0 +1,25 @@
+@import '/src/styles/variables';
+
+.button-rt {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: white;
+    border-radius: 7px;
+    border: none;
+    &:focus-visible {
+        outline: none;
+    }
+}
+.button-rt.primary {
+    background: $primarybnbg;
+}
+.button-rt.dark {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.button-rt.theme-primary {
+    background: var(--primaryBnBg);
+}
+.button-rt.danger {
+    background: $red0;
+}

@@ -1,0 +1,125 @@
+@import '/src/styles/theme.scss';
+@import '/src/styles/common.scss';
+
+.nft-page-rt {
+    padding-top: 30px;
+    .nft-info {
+        display: flex;
+        flex-wrap: nowrap;
+        margin-bottom: 50px;
+        @media screen and (max-width: 992px) {
+            flex-direction: column;
+        }
+        .image {
+            @extend .card;
+            width: 540px;
+            height: 540px;
+            background: $gray1;
+            margin-right: 30px;
+            @media screen and (max-width: 992px) {
+                width: 100%;
+                height: auto;
+                padding-bottom: 100%;
+                margin-bottom: 30px;
+            }
+        }
+        .info {
+            @extend .card;
+            padding: 50px 60px;
+            @media screen and (max-width: 768px) {
+                padding: 30px 25px;
+            }
+            h1 {
+                font-size: 44px;
+                margin-bottom: 11px;
+                color: black;
+                @media screen and (max-width: 768px) {
+                    font-size: 36px;
+                }
+            }
+            .description {
+                color: rgba(0, 0, 0, 0.4);
+                margin-bottom: 20px;
+                @media screen and (max-width: 768px) {
+                    font-size: 16px;
+                }
+            }
+            .price {
+                font-size: 28px;
+                margin-bottom: 10px;
+                span {
+                    font-size: 16px;
+                    color: rgba(0, 0, 0, 0.4);
+                }
+            }
+            .amount {
+                font-size: 16px;
+                color: rgba(0, 0, 0, 0.4);
+                margin-bottom: 30px;
+                @media screen and (max-width: 768px) {
+                    margin-bottom: 25px;
+                }
+            }
+            h3 {
+                font-size: 24px;
+                color: black;
+                text-decoration: underline;
+                margin-bottom: 15px;
+            }
+            .collection {
+                margin-bottom: 30px;
+                font-size: 18px;
+                @media screen and (max-width: 768px) {
+                    margin-bottom: 25px;
+                }
+            }
+            .button-rt {
+                margin-bottom: 15px;
+                width: 100%;
+            }
+            .loyalty {
+                font-size: 16px;
+                color: rgba(0, 0, 0, 0.4);
+            }
+        }
+    }
+    .owner-info {
+        margin-bottom: 50px;
+        h2 {
+            font-size: 36px;
+            margin-bottom: 15px;
+            @media screen and (max-width: 768px) {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+        }
+        .owner {
+            margin-bottom: 30px;
+        }
+    }
+    .history {
+        h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+            @media screen and (max-width: 768px) {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+        }
+        .table-rt {
+            td {
+                width: 25%;
+                div {
+                    display: flex;
+                    align-items: center;
+                }
+                .icon-badge {
+                    margin-left: 10px;
+                }
+                .icon {
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+}
