@@ -10,6 +10,9 @@
         padding: 12px 10px 12px 50px;
         color: $lightfg1;
         font-size: 14px;
+        @media screen and (max-width: 1500px) {
+            width: 300px;
+        }
     }
     span {
         position: absolute;

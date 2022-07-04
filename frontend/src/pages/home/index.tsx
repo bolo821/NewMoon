@@ -43,16 +43,16 @@ const Home = () => {
                     <div className='hot'>
                         <h2>🔥 HOT right now</h2>
                         <div className='row'>
-                            <div className='col-lg-3 col-md-4 col-12'>
+                            <div className='col-lg-4 col-md-6 col-12'>
                                 <SeeNftCard />
                             </div>
-                            <div className='col-lg-3 col-md-4 col-12'>
+                            <div className='col-lg-4 col-md-6 col-12'>
                                 <SeeNftCard />
                             </div>
-                            <div className='col-lg-3 col-md-4 col-12'>
+                            <div className='col-lg-4 col-md-6 col-12'>
                                 <SeeNftCard />
                             </div>
-                            <div className='col-lg-3 col-md-4 col-12'>
+                            <div className='col-lg-4 col-md-6 col-12'>
                                 <SeeNftCard />
                             </div>
                         </div>
@@ -86,16 +86,16 @@ const Home = () => {
                             </div>
                         </div>
                         <div className='row'>
-                            <div className='col-lg-3 col-md-4 col-12'>
+                            <div className='col-lg-4 col-md-6 col-12'>
                                 <NFTCard />
                             </div>
-                            <div className='col-lg-3 col-md-4 col-12'>
+                            <div className='col-lg-4 col-md-6 col-12'>
                                 <NFTCard />
                             </div>
-                            <div className='col-lg-3 col-md-4 col-12'>
+                            <div className='col-lg-4 col-md-6 col-12'>
                                 <NFTCard />
                             </div>
-                            <div className='col-lg-3 col-md-4 col-12'>
+                            <div className='col-lg-4 col-md-6 col-12'>
                                 <NFTCard />
                             </div>
                         </div>
