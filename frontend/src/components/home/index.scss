@@ -1,13 +1,13 @@
-@import '/src/styles/theme.scss';
 @import '/src/styles/common.scss';
 
 .see-nft-card-rt {
     @extend .card;
     padding: 15px 15px 20px;
+    background-color: var(--cardbg0);
     .image {
         width: 100%;
         height: 371px;
-        background: var(--seeNftImageBg);
+        background: var(--cardimgbg0);
         margin-bottom: 20px;
         border-radius: 15px;
     }
@@ -23,15 +23,17 @@
     display: flex;
     align-items: center;
     padding: 15px 30px;
+    background-color: var(--cardbg1);
     .avatar {
         width: 60px;
         height: 60px;
         border-radius: 50%;
-        background: $gray0;
+        background-color: var(--cardimgbg1);
         margin-right: 20px;
     }
     .name {
         margin-right: 10px;
+        color: var(--color0);
     }
 }
 
@@ -40,7 +42,9 @@
     align-items: center;
     border-radius: 10px;
     padding: 12px;
-    box-shadow: rgba(0, 0, 0, 0.05) 0 4px 50px;
+    box-shadow: var(--color4) 0 4px 50px;
+    color: var(--color0);
+    background-color: var(--background5);
     .setting-icon {
         margin-right: 10px;
     }
@@ -52,11 +56,11 @@
         margin-right: 8px;
         width: 1px;
         height: 24px;
-        background: rgba(0, 0, 0, 0.1);
+        background: var(--color4);
     }
-    .arrow {
+    svg {
         path {
-            stroke: black;
+            stroke: var(--color0);
         }
     }
 }
@@ -66,17 +70,18 @@
     display: flex;
     flex-direction: column;
     padding: 15px 15px 30px;
+    background-color: var(--cardbg1);
     .owner {
         display: flex;
         padding: 10px 15px;
         border-radius: 10px;
         margin-bottom: 10px;
-        background-color: $gray1;
+        background-color: var(--cardimgbg2);
         .avatar {
             width: 40px;
             height: 40px;
             border-radius: 50%;
-            background-color: $gray0;
+            background-color: var(--cardimgbg1);
             margin-right: 10px;
         }
         .name {
@@ -84,32 +89,32 @@
             flex-direction: column;
             span:first-child {
                 font-size: 12px;
-                color: rgba(0, 0, 0, 0.4);
+                color: var(--color3);
                 margin-bottom: auto;
             }
             span:last-child {
                 font-size: 16px;
-                color: black;
+                color: var(--color0);
             }
         }
     }
     .image {
         width: 100%;
         height: 400px;
-        background-color: $gray1;
+        background-color: var(--cardimgbg2);
         border-radius: 10px;
         margin-bottom: 25px;
     }
     .nft-id {
         display: flex;
         justify-content: space-between;
-        color: rgba(0, 0, 0, 0.6);
+        color: var(--color1);
         font-size: 16px;
         margin-bottom: 15px;
     }
     .nft-name {
         font-size: 24px;
-        color: black;
+        color: var(--color0);
         margin-bottom: 20px;
     }
     .action {
@@ -119,14 +124,22 @@
         .price {
             font-size: 22px;
             margin-right: 5px;
-            color: black;
+            color: var(--color0);
+            display: flex;
+            align-items: center;
+            svg {
+                margin-left: 5px;
+                path {
+                    fill: var(--color0);
+                }
+            }
         }
         .price-usd {
             font-size: 16px;
-            color: rgba(0, 0, 0, 0.4);
+            color: var(--color3);
         }
         .button-rt {
-            color: black;
+            color: var(--color0);
             padding: 10px 40px;
         }
     }

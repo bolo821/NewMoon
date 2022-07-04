@@ -1,4 +1,5 @@
 import React from 'react';
+import './index.scss';
 import SettingIcon from 'components/icons/SettingIcon';
 import DownArrow from 'components/icons/DownArrow';
 

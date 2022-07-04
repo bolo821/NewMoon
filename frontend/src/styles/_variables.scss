@@ -6,24 +6,67 @@ $gray1: #F9F9F9;
 $gray2: #232B3C;
 $gray3: #D5DAE0;
 $gray4: #F4F5FA;
+$gray5: #38404F;
+$gray6: #0B101C;
+$gray7: #22262A;
+$gray8: #353A3E;
+$gray9: #242C3D;
 $red0: #DE3446;
 $green0: #1BBB43;
 
+
 $darkbg0: #0B1426;
-$darkbg1: #0B101C;
+$darkbg1: $gray2;
+$darkbg2: $gray2;
+$darkbg3: $gray7;
+$darkbg4: $gray8;
+$darkbg5: $gray9;
 
-$darkcardbg0: rgba(249, 249, 249, 0.1);
+$darkcardimgbg0: rgba(249, 249, 249, 0.1);
+$darkcardimgbg1: rgba(255, 255, 255, 0.1);
+$darkcardimgbg2: $gray5;
+$darkcardimgbg3: $gray2;
+$darkcardimgbg4: $gray5;
+$darkcardimgbg5: $gray5;
 
-$darkfg0: #FFFFFF;
+$darkcardbg0: rgba(255, 255, 255, 0.1);
+$darkcardbg1: $gray2;
+
+$darkfg0: white;
 $darkfg1: rgba(255, 255, 255, 0.6);
 $darkfg2: rgba(255, 255, 255, 0.3);
+$darkfg3: rgba(255, 255, 255, 0.4);
+$darkfg4: rgba(255, 255, 255, 0.1);
+$darkfg5: rgba(255, 255, 255, 0.2);
 
+$darkshadow0: $blue2;
+$darkselectarrow: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
 
-$lightbg0: #FFFFFF;
+$lightbg0: white;
+$lightbg1: $gray1;
+$lightbg2: $gray4;
+$lightbg3: rgba(0, 0, 0, 0.2);
+$lightbg4: white;
+$lightbg5: white;
 
-$lightcardbg0: rgb(249, 249, 249);
+$lightcardimgbg0: rgb(249, 249, 249);
+$lightcardimgbg1: $gray0;
+$lightcardimgbg2: $gray1;
+$lightcardimgbg3: $gray3;
+$lightcardimgbg4: $gray0;
+$lightcardimgbg5: white;
 
-$lightfg0: #000000;
+$lightcardbg0: white;
+$lightcardbg1: white;
+
+$lightfg0: black;
 $lightfg1: rgba(0, 0, 0, 0.6);
+$lightfg2: rgba(0, 0, 0, 0.3);
+$lightfg3: rgba(0, 0, 0, 0.4);
+$lightfg4: rgba(0, 0, 0, 0.1);
+$lightfg5: rgba(0, 0, 0, 0.2);
+
+$lightshadow0: $lightfg2;
+$lightselectarrow: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
 
 $primarybnbg: linear-gradient(60deg, $blue0, $blue1);

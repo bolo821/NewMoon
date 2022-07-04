@@ -1,9 +1,29 @@
 @import './_variables.scss';
 
 $themes: (
-    welcomeCardBg: (
+    background0: (
         darkTheme: $darkbg0,
         lightTheme: $lightbg0,
+    ),
+    background1: (
+        darkTheme: $darkbg1,
+        lightTheme: $lightbg1,
+    ),
+    background2: (
+        darkTheme: $darkbg2,
+        lightTheme: $lightbg2,
+    ),
+    background3: (
+        darkTheme: $darkbg3,
+        lightTheme: $lightbg3,
+    ),
+    background4: (
+        darkTheme: $darkbg4,
+        lightTheme: $lightbg4,
+    ),
+    background5: (
+        darkTheme: $darkbg5,
+        lightTheme: $lightbg5,
     ),
     color0: (
         darkTheme: $darkfg0,
@@ -13,13 +33,65 @@ $themes: (
         darkTheme: $darkfg1,
         lightTheme: $lightfg1,
     ),
-    seeNftImageBg: (
+    color2: (
+        darkTheme: $darkfg2,
+        lightTheme: $lightfg2,
+    ),
+    color3: (
+        darkTheme: $darkfg3,
+        lightTheme: $lightfg3,
+    ),
+    color4: (
+        darkTheme: $darkfg4,
+        lightTheme: $lightfg4,
+    ),
+    color5: (
+        darkTheme: $darkfg5,
+        lightTheme: $lightfg5,
+    ),
+    cardimgbg0: (
+        darkTheme: $darkcardimgbg0,
+        lightTheme: $lightcardimgbg0,
+    ),
+    cardimgbg1: (
+        darkTheme: $darkcardimgbg1,
+        lightTheme: $lightcardimgbg1,
+    ),
+    cardimgbg2: (
+        darkTheme: $darkcardimgbg2,
+        lightTheme: $lightcardimgbg2,
+    ),
+    cardimgbg3: (
+        darkTheme: $darkcardimgbg3,
+        lightTheme: $lightcardimgbg3,
+    ),
+    cardimgbg4: (
+        darkTheme: $darkcardimgbg4,
+        lightTheme: $lightcardimgbg4,
+    ),
+    cardimgbg5: (
+        darkTheme: $darkcardimgbg5,
+        lightTheme: $lightcardimgbg5,
+    ),
+    cardbg0: (
         darkTheme: $darkcardbg0,
         lightTheme: $lightcardbg0,
+    ),
+    cardbg1: (
+        darkTheme: $darkcardbg1,
+        lightTheme: $lightcardbg1,
     ),
     primaryBnBg: (
         darkTheme: $primarybnbg,
         lightTheme: $lightfg0,
+    ),
+    shadow0: (
+        darkTheme: $darkshadow0,
+        lightTheme: $lightshadow0,
+    ),
+    selectarrow: (
+        darkTheme: $darkselectarrow,
+        lightTheme: $lightselectarrow,
     ),
 );
 

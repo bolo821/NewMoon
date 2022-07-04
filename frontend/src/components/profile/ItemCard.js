@@ -7,7 +7,7 @@ const ItemCard = props => {
     const { type, image } = props;
 
     return (
-        <div className="item-card-rt">
+        <div className="item-card-rt blue-shadow">
             <div className="image">
                 <img src={image} alt="Img" />
             </div>

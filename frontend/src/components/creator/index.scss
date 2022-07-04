@@ -1,5 +1,4 @@
 @import '/src/styles/common.scss';
-@import '/src/styles/theme.scss';
 
 .creator-card-rt {
     @extend .card;
@@ -7,12 +6,14 @@
     border-radius: 5px;
     display: flex;
     flex-direction: column;
+    background-color: var(--cardbg1);
+    color: var(--color0);
     .image {
         width: 100%;
         height: 180px;
         border-radius: 5px;
-        background-color: $gray1;
-        border: 1px solid rgba(0, 0, 0, 0.1);
+        background-color: var(--cardimgbg2);
+        border: 1px solid var(--color4);
         margin-bottom: 10px;
     }
     p {
@@ -29,13 +30,18 @@
             span {
                 margin-left: 5px;
             }
+            svg {
+                path {
+                    fill: var(--color0);
+                }
+            }
         }
         .rank {
             padding: 4px 7px;
             border-radius: 5px;
-            border: 1px solid rgba(0, 0, 0, 0.1);
+            border: 1px solid var(--color4);
             font-size: 12px;
-            color: rgba(0, 0, 0, 0.4);
+            color: var(--color3);
         }
     }
 }

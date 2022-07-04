@@ -1,8 +1,8 @@
-@import '/src/styles/theme.scss';
 @import '/src/styles/common.scss';
 
 .nft-page-rt {
     padding-top: 30px;
+    background-color: var(--background0);
     .nft-info {
         display: flex;
         flex-wrap: nowrap;
@@ -14,7 +14,7 @@
             @extend .card;
             width: 540px;
             height: 540px;
-            background: $gray1;
+            background: var(--cardimgbg2);
             margin-right: 30px;
             @media screen and (max-width: 992px) {
                 width: 100%;
@@ -26,19 +26,20 @@
         .info {
             @extend .card;
             padding: 50px 60px;
+            background: var(--cardbg1);
             @media screen and (max-width: 768px) {
                 padding: 30px 25px;
             }
             h1 {
                 font-size: 44px;
                 margin-bottom: 11px;
-                color: black;
+                color: var(--color0);
                 @media screen and (max-width: 768px) {
                     font-size: 36px;
                 }
             }
             .description {
-                color: rgba(0, 0, 0, 0.4);
+                color: var(--color3);
                 margin-bottom: 20px;
                 @media screen and (max-width: 768px) {
                     font-size: 16px;
@@ -47,14 +48,15 @@
             .price {
                 font-size: 28px;
                 margin-bottom: 10px;
+                color: var(--color0);
                 span {
                     font-size: 16px;
-                    color: rgba(0, 0, 0, 0.4);
+                    color: var(--color3);
                 }
             }
             .amount {
                 font-size: 16px;
-                color: rgba(0, 0, 0, 0.4);
+                color: var(--color3);
                 margin-bottom: 30px;
                 @media screen and (max-width: 768px) {
                     margin-bottom: 25px;
@@ -62,24 +64,24 @@
             }
             h3 {
                 font-size: 24px;
-                color: black;
+                color: var(--color0);
                 text-decoration: underline;
                 margin-bottom: 15px;
             }
             .collection {
                 margin-bottom: 30px;
                 font-size: 18px;
+                color: var(--color0);
                 @media screen and (max-width: 768px) {
                     margin-bottom: 25px;
                 }
             }
             .button-rt {
                 margin-bottom: 15px;
-                width: 100%;
             }
             .loyalty {
                 font-size: 16px;
-                color: rgba(0, 0, 0, 0.4);
+                color: var(--color3);
             }
         }
     }
@@ -88,6 +90,7 @@
         h2 {
             font-size: 36px;
             margin-bottom: 15px;
+            color: var(--color0);
             @media screen and (max-width: 768px) {
                 font-size: 24px;
                 margin-bottom: 20px;
@@ -101,6 +104,7 @@
         h2 {
             font-size: 36px;
             margin-bottom: 30px;
+            color: var(--color0);
             @media screen and (max-width: 768px) {
                 font-size: 24px;
                 margin-bottom: 20px;
@@ -118,6 +122,9 @@
                 }
                 .icon {
                     margin-right: 15px;
+                    path {
+                        fill: var(--color0);
+                    }
                 }
             }
         }

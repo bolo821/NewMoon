@@ -29,7 +29,7 @@ const Creator = () => {
                                         <BadgeIcon />
                                         <EyeIcon />
                                     </p>
-                                    <p className="wallet">
+                                    <div className="wallet">
                                         <div>
                                             <span>0x60E4...a7c6</span>
                                             <CopyIcon />
@@ -38,7 +38,7 @@ const Creator = () => {
                                             <span>The GNOGEN is a collection of up...</span>
                                             <span>More</span>
                                         </div>
-                                    </p>
+                                    </div>
                                 </div>
                             </div>
                             <div className="share">

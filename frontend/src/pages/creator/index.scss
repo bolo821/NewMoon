@@ -1,15 +1,16 @@
 @import '/src/styles/common.scss';
-@import '/src/styles/theme.scss';
 
 .creator-page-rt {
+    background-color: var(--background0);
     .top-section {
         padding: 30px 0;
-        background-color: $gray1;
+        background-color: var(--background1);
         .profile {
             display: flex;
             justify-content: space-between;
             margin-bottom: 20px;
             position: relative;
+            color: var(--color0);
             @media screen and (max-width: 768px) {
                 flex-direction: column;
             }
@@ -24,7 +25,7 @@
                     width: 90px;
                     height: 90px;
                     border-radius: 5px;
-                    background-color: $gray0;
+                    background-color: var(--cardimgbg4);
                     margin-right: 20px;
                     @media screen and (max-width: 768px) {
                         margin-bottom: 20px;
@@ -47,6 +48,8 @@
                     }
                     .wallet {
                         margin: 0;
+                        display: flex;
+                        align-items: center;
                         div:first-child {
                             margin-right: 30px;
                             font-size: 16px;
@@ -54,12 +57,17 @@
                                 margin-bottom: 10px;
                             }
                             span {
-                                color: rgba(0, 0, 0, 0.4);
+                                color: var(--color3);
                                 margin-right: 10px;
+                            }
+                            svg {
+                                path {
+                                    stroke: var(--color0);
+                                }
                             }
                         }
                         div:last-child {
-                            color:rgba(0, 0, 0, 0.6);
+                            color: var(--color1);
                             font-size: 14px;
                             @media screen and (max-width: 768px) {
                                 margin-bottom: 20px;
@@ -80,15 +88,28 @@
                 & > svg {
                     margin-right: 20px;
                 }
+                & > svg:first-child {
+                    path {
+                        stroke: var(--color0);
+                    }
+                }
+                & > svg:not(:first-child) {
+                    path {
+                        fill: var(--color0);
+                    }
+                }
                 .share-bn {
                     padding: 10px 12px;
-                    border: 1px solid rgba(0, 0, 0, 0.2);
+                    border: 1px solid var(--color5);
                     border-radius: 5px;
                     display: flex;
                     align-items: center;
                     font-size: 14px;
                     svg {
                         margin-right: 10px;
+                        path {
+                            stroke: var(--color0);
+                        }
                     }
                 }
             }
@@ -105,7 +126,7 @@
                 .inner {
                     padding: 10px 15px;
                     font-size: 14px;
-                    background: white;
+                    background-color: var(--cardimgbg5);
                     border-radius: 5px;
                 }
             }
@@ -113,17 +134,28 @@
         .nft-info {
             display: flex;
             width: fit-content;
-            border: 1px solid rgba(0, 0, 0, 0.2);
+            border: 1px solid var(--color5);
             border-radius: 10px;
-            background-color: white;
+            background-color: var(--cardimgbg5);
             font-size: 14px;
             overflow-x: auto;
+            color: var(--color0);
             @media screen and (max-width: 768px) {
                 width: 100%;
             }
             div {
                 padding: 12px 20px;
                 white-space: nowrap;
+                svg:nth-child(2) {
+                    path {
+                        fill: var(--color0);
+                    }
+                }
+                svg:nth-child(5) {
+                    path {
+                        stroke: var(--color0);
+                    }
+                }
             }
             span {
                 margin-right: 15px;
@@ -132,10 +164,10 @@
                 margin-right: 5px;
             }
             span:first-child {
-                color:rgba(0, 0, 0, 0.6);       
+                color:var(--color1);      
             }
             div:not(:last-child) {
-                border-right: 1px solid rgba(0, 0, 0, 0.2);
+                border-right: 1px solid var(--color5);
             }
             .change {
                 color: $red0;
@@ -146,14 +178,15 @@
         }
     }
     .tab {
-        border-top: 1px solid rgba(0, 0, 0, 0.1);
-        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        border-top: 1px solid var(--color4);
+        border-bottom: 1px solid var(--color4);
         ul {
             list-style: none;
             margin: 0;
             padding: 0;
             display: flex;
             font-size: 14px;
+            color: var(--color0);
             li {
                 padding: 15px;
                 cursor: pointer;
@@ -164,7 +197,7 @@
         }
     }
     .body {
-        margin-bottom: 50px;
+        padding-bottom: 50px;
         .filter {
             display: flex;
             flex-direction: row-reverse;
@@ -176,7 +209,8 @@
                 @media screen and (max-width: 768px) {
                     width: 100%;       
                 }
-                background-color: $gray4;
+                background-color: var(--background2);
+                color: var(--color0);
                 border: none;
                 padding: 15px;
                 font-size: 14px;
@@ -185,10 +219,10 @@
             }
             select {
                 appearance: none;
-                background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+                background-image: var(--selectarrow);
                 background-repeat: no-repeat;
                 background-position: right 20px center;
-                background-size: 1em;
+                background-size: 1.5em;
             }
             .search {
                 position: relative;

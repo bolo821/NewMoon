@@ -46,9 +46,10 @@
         }
         .modal-content {
             border-radius: 0;
+            border: none;
             .header {
                 padding: 20px 30px;
-                background-color: rgba(0, 0, 0, 0.2);
+                background-color: var(--background3);
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -56,6 +57,12 @@
                     font-size: 18px;
                     font-weight: 600;
                     margin: 0;
+                    color: var(--color0);
+                }
+                svg {
+                    path {
+                        stroke: var(--color0);
+                    }
                 }
             }
             ul {
@@ -67,7 +74,9 @@
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+                    background-color: var(--background4);
+                    color: var(--color0);
+                    border-bottom: 3px solid var(--background3);
                     font-weight: 600;
                     font-size: 18px;
                     cursor: pointer;
@@ -82,11 +91,11 @@
                 }
             }
             .footer {
-                background: rgba(0, 0, 0, 0.2);
+                background: var(--background3);
                 padding: 30px 30px 40px;
                 p {
                     text-align: center;
-                    color: rgba(0, 0, 0, 0.4);
+                    color: var(--color3);
                     font-size: 16px;
                 }
                 p:first-child {
@@ -99,7 +108,7 @@
                     margin-bottom: 10px;
                 }
                 p:last-child {
-                    color: black;
+                    color: var(--color0);
                     text-decoration: underline;
                     font-weight: 500;
                 }

@@ -1,7 +1,7 @@
-@import '/src/styles/theme.scss';
+@import '/src/styles/common.scss';
 
 .menu-page-rt {
-    background-color: $darkbg1;
+    background-color: $gray6;
     padding-top: 30px;
     min-height: calc(100vh - 100px);
     .search {

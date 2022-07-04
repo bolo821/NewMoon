@@ -1,6 +1,4 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './styles/theme.scss';
-import './styles/common.scss';
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import App from './App';

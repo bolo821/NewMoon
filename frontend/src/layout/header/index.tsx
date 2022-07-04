@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import './index.scss';
 import { useNavigate, useLocation, Link } from 'react-router-dom';
 import SearchBox from 'components/header/SearchBox';
@@ -9,10 +9,12 @@ import MobileBn from 'components/header/MobileBn';
 import MobileSearchIcon from 'components/icons/MobileSearchIcon';
 import MobileMenuIcon from 'components/icons/MobileMenuIcon';
 import ConnectWalletModal from 'components/header/ConnectWalletModal';
+import { ThemeContext } from 'layout';
 
 const Header = () => {
     const navigate = useNavigate();
     const loc = useLocation();
+    const { theme, setTheme } = useContext(ThemeContext);
     const [ searchKey, setSearchKey ] = useState('');
     const [ showModal, setShowModal ] = useState(false);
 
@@ -24,13 +26,18 @@ const Header = () => {
         }
     }
 
+    const changeTheme = () => {
+        if (theme === 'dark') setTheme('light');
+        else setTheme('dark');
+    }
+
     return (
         <>
             <div className='header-rt'>
                 <div className='container-rt'>
                     <div className='left'>
                         <div className='nft'>
-                            <span>NewMoon | NFT</span>
+                            <span onClick={() => navigate('/home')}>NewMoon | NFT</span>
                         </div>
                         <div className="search">
                             <SearchBox keyword={searchKey} setKeyword={setSearchKey} />
@@ -42,13 +49,13 @@ const Header = () => {
                     <div className='right'>
                         <ul>
                             <li><Link to="/collections">Collections</Link></li>
-                            <li><Link to="/rewards">Rewards</Link></li>
+                            <li><Link to="/profile">Rewards</Link></li>
                         </ul>
                         <div className="flag">
                             <Language />
                         </div>
-                        <div className="theme-select">
-                            <ThemeSelect day />
+                        <div className="theme-select" onClick={changeTheme}>
+                            <ThemeSelect day={theme === 'light'} />
                         </div>
                         <Button id="id-connect-wallet-btn" color="primary" onClick={() => setShowModal(true)}>
                             Connect
@@ -59,12 +66,12 @@ const Header = () => {
             <div className='header-mobile-rt'>
                 <div className='container-rt'>
                     <div className='left'>
-                        <span>NewMoon | NFT</span>
+                        <span onClick={() => navigate('/home')}>NewMoon | NFT</span>
                     </div>
                     <div className='right'>
                         <div className="menu">
-                            <MobileBn onClick={() => {}}>
-                                <ThemeSelect day mobile />
+                            <MobileBn onClick={changeTheme}>
+                                <ThemeSelect day={theme === 'light'} mobile />
                             </MobileBn>
                         </div>
                         <div className="menu">
