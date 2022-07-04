@@ -65,3 +65,13 @@ code {
 .modal-backdrop.show {
     opacity: 0.9;
 }
+.col-xxl-3 {
+    @media screen and (min-width: 1500px) {
+        flex: 0 0 25%;
+        max-width: 25%;
+        position: relative;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
